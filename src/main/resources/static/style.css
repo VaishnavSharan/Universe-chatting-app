@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Background Image Styles */
+#landing-page {
+    background: url('https://img.freepik.com/free-photo/photorealistic-earth-planet_23-2151075866.jpg?t=st=1724758183~exp=1724761783~hmac=d5dab6fdfb6dd178123a2479a39af7922277b81a55e6f75b1491de919fe4d888&w=740') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.universe-title {
+    font-family: 'Roboto', sans-serif; /* Use Google Font */
+    font-size: 6rem; /* Large font size */
+    color: #ffffff;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for text */
+    margin: 0;
+}
+
+.welcome-message, .subheading {
+    font-family: 'Orbitron', sans-serif; /* Use Google Font */
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-message {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.subheading {
+    font-size: 1.25rem;
+}
+
+/* Name Entry Page */
+#name-from {
+    background: url('https://img.freepik.com/free-photo/photorealistic-earth-planet_23-2151075866.jpg?t=st=1724758183~exp=1724761783~hmac=d5dab6fdfb6dd178123a2479a39af7922277b81a55e6f75b1491de919fe4d888&w=740') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+}
+
+.input-group input {
+    color: #f8f9fa;
+    border-radius: 20px; /* Rounded corners for modern look */
+}
+
+.input-group .btn-dark {
+    border-radius: 20px; /* Match input field rounded corners */
+}
+
+/* Chatroom Selection Page */
+#room-selection {
+    background: url('https://img.freepik.com/free-photo/photorealistic-earth-planet_23-2151075866.jpg?t=st=1724758183~exp=1724761783~hmac=d5dab6fdfb6dd178123a2479a39af7922277b81a55e6f75b1491de919fe4d888&w=740') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px; /* Space for logout button */
+    overflow-y: auto;
+}
+
+#room-selection .container {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for better visibility */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.chatroom-item {
+    background-color: #6f42c1; /* Fluorescent purple */
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 12px 20px; /* More padding for a modern look */
+    margin: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.chatroom-item:hover {
+    background-color: #5a2a9b; /* Darker purple for hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Chatroom Page */
+#chat-room {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: url('https://img.freepik.com/free-photo/photorealistic-earth-planet_23-2151075866.jpg?t=st=1724758183~exp=1724761783~hmac=d5dab6fdfb6dd178123a2479a39af7922277b81a55e6f75b1491de919fe4d888&w=740') no-repeat center center;
+    background-size: cover;
+}
+
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+}
+
+.message-container {
+    height: 60vh;
+    overflow-y: auto;
+}
+
+#message-container-table td {
+    color: #f8f9fa;
+}
+
+#message-container-table {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.input-group input {
+    color: #f8f9fa;
+    border-radius: 20px;
+}
+
+.input-group .btn-dark {
+    border-radius: 20px;
+}
+
+/* Logout Button Styles */
+.btn-light {
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding: 12px 24px; /* Larger size for better visibility */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.25rem; /* Larger font size */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-light:hover {
+    background-color: #f0f0f0; /* Slightly gray on hover */
+    color: #000000;
+}
+

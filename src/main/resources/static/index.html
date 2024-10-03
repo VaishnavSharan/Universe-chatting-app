@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universe Chatroom</title>
+    <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script src="/script.js"></script>
+    <!-- Include Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Orbitron:wght@400&display=swap" rel="stylesheet">
+</head>
+<body class="bg-dark">
+
+<!-- Universe Landing Page -->
+<div id="landing-page" class="d-flex flex-column justify-content-center align-items-center">
+    <h1 class="universe-title">Universe</h1>
+
+    <button class="btn btn-light btn-lg mt-4" id="get-started-btn">Get Started</button>
+</div>
+
+<!-- Name Entry Page -->
+<div id="name-from" class="d-none d-flex align-items-center justify-content-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h1 class="welcome-message">Welcome to Universe Chatroom</h1>
+                <p class="subheading">Connect with the world</p>
+                <div class="input-group mb-3">
+                    <input type="text" id="name-value" placeholder="Enter your name" class="form-control form-control-lg">
+                    <div class="input-group-append">
+                        <button class="btn btn-dark btn-lg" id="login">Enter</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Chatroom Selection Page -->
+<div id="room-selection" class="d-none">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <button class="btn btn-light btn-lg" id="logout-btn"><i class="fas fa-sign-out-alt"></i></button>
+                </div>
+                <h2 class="text-center text-white mb-4">Available Chatrooms</h2>
+                <div id="chatroom-bar" class="d-flex flex-wrap"></div>
+                <div class="input-group mt-4">
+                    <input type="text" id="room-value" placeholder="Enter new chatroom name" class="form-control form-control-lg">
+                    <div class="input-group-append">
+                        <button class="btn btn-dark btn-lg" id="create-room">Create Room</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Chatroom Page -->
+<div id="chat-room" class="d-none">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <button class="btn btn-light btn-lg" id="back-btn"><i class="fas fa-arrow-left"></i></button>
+                    <button class="btn btn-light btn-lg" id="logout-btn-chat"><i class="fas fa-sign-out-alt"></i></button>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3 id="name-title" class="mb-0">Chatroom</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="message-container">
+                            <table id="message-container-table" class="table table-dark"></table>
+                        </div>
+                        <div class="input-group mt-3">
+                            <input type="text" id="message-value" placeholder="Enter your message" class="form-control form-control-lg">
+                            <div class="input-group-append">
+                                <button class="btn btn-dark btn-lg" id="send-btn">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
